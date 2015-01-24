@@ -1,13 +1,16 @@
 # Site settings
-title: Clean Blog
+title: Dan Keder
 header-img: img/home-bg.jpg
-email: your-email@yourdomain.com
-description: "Write your site description here. It will be used as your sites meta description as well!"
-baseurl: "/startbootstrap-clean-blog-jekyll"
-url: "http://yourdomain.com"
-twitter_username: SBootstrap
-github_username:  davidtmiller
-facebook_username:  IronSummitMedia
+email: dan.keder@gmail.com
+description: "Dan Keder's blog"
+baseurl: ""
+url: "http://keder.me"
+twitter_username: xdaneus
+github_username:  dankeder
+googleplus_username: DanKeder
+linkedin_username: keder
+disqus_shortname: dankeder
+google_analytics_tracking_id: UA-47631149-1
 
 # Build settings
 markdown: kramdown

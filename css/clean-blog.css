@@ -41,7 +41,7 @@ hr.small {
   border-color: white;
 }
 .navbar-custom {
-  background: white;
+  background: #444;
   position: absolute;
   top: 0;
   left: 0;
@@ -60,24 +60,24 @@ hr.small {
 }
 @media only screen and (min-width: 768px) {
   .navbar-custom {
-    background: transparent;
+    background-color: white;
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: white;
+    color: #444;
     padding: 20px;
   }
   .navbar-custom .navbar-brand:hover,
   .navbar-custom .navbar-brand:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(92, 92, 92, 0.8);
   }
   .navbar-custom .nav li a {
-    color: white;
+    color: #444;
     padding: 20px;
   }
   .navbar-custom .nav li a:hover,
   .navbar-custom .nav li a:focus {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(92, 92, 92, 0.8);
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -142,12 +142,14 @@ hr.small {
 .intro-header .page-heading {
   padding: 100px 0 50px;
   color: white;
+  text-shadow: #333 2px -2px 5px, #333 -2px 2px 5px;
 }
 @media only screen and (min-width: 768px) {
   .intro-header .site-heading,
   .intro-header .post-heading,
   .intro-header .page-heading {
-    padding: 150px 0;
+    padding-top: 180px;
+    padding-bottom: 100px;
   }
 }
 .intro-header .site-heading,
@@ -193,6 +195,7 @@ hr.small {
   font-style: italic;
   font-weight: 300;
   font-size: 20px;
+  text-shadow: #333 1px -1px 3px, #333 -1px 1px 3px, #333 1px 1px 3px, #333 -1px -1px 3px;;
 }
 .intro-header .post-heading .meta a {
   color: white;
