@@ -59,7 +59,7 @@ hr.small {
 // Navigation
 
 .navbar-custom {
-	background: white;
+	background: #444;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -80,10 +80,10 @@ hr.small {
 		}
 	}
 	@media only screen and (min-width: 768px) {
-		background: transparent;
+		background: white;
 		border-bottom: 1px solid transparent;
 		.navbar-brand {
-			color: white;
+			color: #444;
 			padding: 20px;
 			&:hover,
 			&:focus {
@@ -93,7 +93,7 @@ hr.small {
 		.nav {
 			li {
 				a {
-					color: white;
+					color: #444;
 					padding: 20px;
 					&:hover,
 					&:focus {
@@ -168,8 +168,10 @@ hr.small {
 	.page-heading {
 		padding: 100px 0 50px;
 		color: white;
+		text-shadow: #333 2px -2px 5px, #333 -2px 2px 5px;
 		@media only screen and (min-width: 768px) {
-			padding: 150px 0;
+			padding-top: 180px;
+			padding-bottom: 100px;
 		}
 	}
 	.site-heading,
@@ -213,6 +215,7 @@ hr.small {
 			font-style: italic;
 			font-weight: 300;
 			font-size: 20px;
+			text-shadow: #333 1px -1px 3px, #333 -1px 1px 3px, #333 1px 1px 3px, #333 -1px -1px 3px;
 			a {
 				color: white;
 			}
