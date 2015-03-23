@@ -45,5 +45,5 @@ to integrate with deployment tools such as
 [Ansible](http://www.ansible.com/how-ansible-works). Performing the actual
 update of the database schema is as simple as running `sqitch --engine pg
 deploy`. To learn how to use it I only had to read through the
-[Tutorial](https://metacpan.org/pod/sqitchtutorial) - so "thumbs up", another
-problem solved :-).
+[Tutorial](https://metacpan.org/pod/distribution/App-Sqitch/lib/sqitchtutorial.pod)
+- so "thumbs up", another problem solved :-).
