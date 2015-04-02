@@ -71,7 +71,7 @@ hr.small {
     border-bottom: 1px solid transparent;
   }
   .navbar-custom .navbar-brand {
-    color: #fff;
+    color: #444;
     padding: 20px;
   }
   .navbar-custom .navbar-brand:hover,
