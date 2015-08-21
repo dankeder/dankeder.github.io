@@ -4,7 +4,6 @@ title:      "Playing with Ansible"
 subtitle:   "Learn how to automate deployment with Ansible."
 date:       2014-10-28 12:02:19 +0200
 author:     "Dan Keder"
-# header-img: "img/post-bg-01.jpg"
 ---
 
 I've been working with [Ansible](http://www.ansible.com/) for several weeks now.

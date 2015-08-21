@@ -4,7 +4,6 @@ title:      "Automating DB schema updates"
 subtitle:   "How to automate database schema updates."
 date:       2015-03-02 18:00:00 +0200
 author:     "Dan Keder"
-# header-img: "img/post-bg-01.jpg"
 ---
 
 Some time ago I've been searching for a tool for automating PostgreSQL database

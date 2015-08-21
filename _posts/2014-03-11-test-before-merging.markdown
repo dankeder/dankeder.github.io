@@ -4,7 +4,6 @@ title:      "Test changes before merging"
 subtitle:   ""
 date:       2014-03-11 08:32:30 +0200
 author:     "Dan Keder"
-# header-img: "img/post-bg-01.jpg"
 ---
 
 That seems obvious, doesn't it? Why would anyone do it the other way around? I

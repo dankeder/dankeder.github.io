@@ -4,7 +4,6 @@ title:      "How to remove ads in Android"
 subtitle:   ""
 date:       2014-03-11 08:32:37 +0200
 author:     "Dan Keder"
-# header-img: "img/post-bg-01.jpg"
 ---
 
 This is a very simple yet effective way to get rid of advertisements

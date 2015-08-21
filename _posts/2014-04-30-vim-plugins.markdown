@@ -4,7 +4,6 @@ title:      "Interesting Vim Plugins"
 subtitle:   "Here are some of the best Vim plugins I found over the years which turn Vim from a pretty good editor to awesome editor."
 date:       2014-04-30 16:29:38 +0200
 author:     "Dan Keder"
-# header-img: "img/post-bg-01.jpg"
 ---
 
 YouCompleteMe
