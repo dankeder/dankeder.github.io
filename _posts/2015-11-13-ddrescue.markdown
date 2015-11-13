@@ -1,0 +1,39 @@
+---
+layout:     post
+title:      "Recovering data with ddrescue"
+subtitle:   ""
+date:       2015-11-13 17:40:00 +0100
+author:     "Dan Keder"
+---
+
+I had a hard-drive failure some time ago. The drive was in a really bad shape,
+which meant that restoring the data in place is out of question.
+I needed a relatively safe way to dump the disk image to another drive and
+restore the filesystem there. The usual `dd(1)` did not work because of a huge
+number of read errors. I found `ddrescue(1)`, which is doing the same thing
+as `dd` but it's way more tolerant to read errors.
+
+After some time I came up with this combo:
+
+    ddrescue -fv -c 32 -r 1 -n /dev/sda3 /dev/sdc1 ddrescue-sda3-recovery.log
+
+Let's dissect it and see what it does:
+
+  - `/dev/sda3` -- Input device it reads data from
+  - `/dev/sdc1` -- Output device it writes data to
+  - `ddrescue-sda3-recovery.log` -- log file that can be used to resume an interrupted dump later
+  - `-n` -- skip the scrape phase
+  - `-r 1` -- how many times will the program try to read the drive if there were some read errors.
+  - `-c 32` -- cluster size, the number of sectors to copy at a time
+  - `-f` -- force overwrite of the output device/file
+  - `-v` -- verbose mode
+
+There are many more options, which are documented in the manual page. There are
+no examples of use though.
+
+After a couple of hours or days we get the dump that we can use to restore data.
+using other tools. In my case I was able to restore part of the filesystem
+just with `fsck.ext4(8)`. But as usual, YMMV.
+
+Beware: Don't just blindly copy/paste the command above. Always double-check the
+devices and files you read from/to so you don't destroy your data!
