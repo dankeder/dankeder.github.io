@@ -2,34 +2,192 @@
 layout: page
 ---
 
-{% for post in paginator.posts %}
-<div class="post-preview">
-    <a href="{{ post.url | prepend: site.baseurl }}">
-        <h2 class="post-title">            {{ post.title }}
-        </h2>
-        {% if post.subtitle %}
-        <h3 class="post-subtitle">
-            {{ post.subtitle }}
-        </h3>
-        {% endif %}
-    </a>
-    <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
-</div>
-<hr>
-{% endfor %}
+<div class="jumbotron">
+  <div class="container">
 
-<!-- Pager -->
-{% if paginator.total_pages > 1 %}
-<ul class="pager">
-    {% if paginator.previous_page %}
-    <li class="previous">
-        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-    </li>
-    {% endif %}
-    {% if paginator.next_page %}
-    <li class="next">
-        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-    </li>
-    {% endif %}
-</ul>
-{% endif %}
+    <div class="row">
+      <div class="col-md-9">
+
+        <div class="page-header">
+        <h1>Dan Keder</h1>
+        </div>
+
+        <p>
+        I am experienced freelance software developer and system administrator.
+        If you have a startup or an established company, I am here to help you.
+        </p>
+
+        <a class="btn btn-primary" href="#contact" role="button">Contact me</a>
+
+      </div>
+
+      <div class="col-md-3">
+
+        <div class="img-responsive " style="width: 200px; height: 240px; margin-top: 50px">
+          <img src="img/portrait_6.jpg" alt="photo" height="240"/>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="row">
+    <div class="col-md-12">
+
+      <h2>What I do</h2>
+
+      <p>
+      I am a freelance software developer and system administrator. I can help
+      you with maintaining your IT infrastructure or with developing your projects.
+      </p>
+
+      <p>
+      Here are some examples of what I might do if you decide to hire me:
+      </p>
+
+      <ul>
+        <li>Automate server deployment and configuration using Ansible</li>
+        <li>Keep servers updated and secured (RHEL, CentOS)</li>
+        <li>Find a way to scale your application and identify performance bottlenecks</li>
+        <li>Setup server monitoring using Icinga 2</li>
+        <li>Setup periodic backups of your data</li>
+        <li>Develop custom scripts and programs</li>
+        <li>Setup replication of your PostgreSQL database</li>
+      </ul>
+
+      <p>
+      I'm able to create <b>systematic solutions</b> that work long-term with
+      minimal maintenance. I'm always looking for ways to decrease technological
+      debt you might have. I can implement <b>automation</b> of your most
+      frequent tasks so you or your team don't waste time doing them over and
+      over.
+      </p>
+
+    </div>
+  </div>
+</div>
+
+<div style="background-color: #eee; padding: 48px 0; margin-bottom: 30px">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <h2>What I use</h2>
+        <p>
+        Here are some of the technologies and tools I use frequently.
+        </p>
+
+        <h4>Operating systems</h4>
+        <ul>
+          <li>Fedora, CentOS, RHEL, Debian</li>
+          <li>systemd, SELinux, firewalld, NetworkManager, &hellip;</li>
+        </ul>
+
+        <h4>Web servers</h4>
+        <ul>
+          <li>Nginx, Apache, HAProxy, uWSGI</li>
+        </ul>
+
+        <h4>Databases</h4>
+        <ul>
+          <li>PostgreSQL, PgBouncer, MySQL</li>
+          <li>Memcached, Redis</li>
+        </ul>
+
+        <h4>Web technologies</h4>
+        <ul>
+          <li>HTTP protocol, designing REST APIs</li>
+          <li>Flask, Django</li>
+          <li>a bit of frontend tech &ndash; HTTP, ES6, CSS3 <small>(I'm not a web designer though)</small>
+        </ul>
+
+        <h4>Task automation</h4>
+        <ul>
+          <li>Ansible</li>
+        </ul>
+
+        <h4>Server monitoring:</h4>
+        <ul>
+          <li>Icinga2, InfluxDB, Grafana</li>
+        </ul>
+
+        <h4>Other</h4>
+        <ul>
+          <li>Vim, Git, VirtualBox, shell, SSH, &hellip;</li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-md-12">
+
+      <h2>Pricing</h2>
+
+      <p>
+      Short-term projects are charged by hour. For larger or long-term
+      projects it is possible to negotiate a flat rate.
+      <a href="#contact">Contact me</a> to get more information for your specific needs.
+      </p>
+
+
+      <h2 id="contact">Contact</h2>
+
+      <p>
+      You can reach me using the form below or you can send me an email to <a href="mailto:{{site.antispam_email }}">{{ site.antispam_email }}</a>.
+      </p>
+
+      <div id="send-success-alert" class="alert alert-success hide">
+        Thank you, your message was sent successfully. I will get back to you as soon as possible.
+      </div>
+
+      <div id="send-failed-alert" class="alert alert-danger hide">
+        Sorry, something went wrong and your message was not sent. Please try again later.
+      </div>
+
+      <div class="panel panel-default" id="contact-form-wrapper">
+        <div class="panel-body">
+
+          <form id="contact-form">
+
+            <div class="form-group" id="name-form-group">
+              <label for="name">Your name</label>
+              <input type="name" class="form-control" id="name" placeholder="Name">
+              <span id="missing-name-alert" class="help-block small hide">* required field</span>
+            </div>
+
+            <div class="form-group" id="email-form-group">
+              <label for="email">Your email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Email">
+              <span id="missing-email-alert" class="help-block small hide">* required field</span>
+            </div>
+
+            <div class="form-group" id="text-form-group">
+              <label for="text">Message text</label>
+              <textarea class="form-control" id="text" rows=7></textarea>
+              <span id="missing-text-alert" class="help-block small hide">* required field</span>
+            </div>
+
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary">Send message</button>
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</div>
