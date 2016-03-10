@@ -50,6 +50,7 @@ $(function() {
         name: $('#contact-form #name').val(),
         email: $('#contact-form #email').val(),
         text: $('#contact-form #text').val(),
+        recaptcha: grecaptcha.getResponse(),
       };
 
       // form validation
@@ -57,6 +58,7 @@ $(function() {
         return;
       }
 
+      // send request
       var posting = $.ajax({
         type: 'POST',
         url: "https://develcraft.com/api/send-mail",
@@ -65,14 +67,21 @@ $(function() {
       });
       posting
       .done(function (data) {
-        if (data.ok) {
+        if (data.success) {
           $('#send-success-alert').removeClass('hide');
           $('#contact-form-wrapper').addClass('hide');
         } else {
-          $('#send-failed-alert').removeClass('hide');
+          if (data.reason === 'recaptcha_check_failed') {
+            grecaptcha.reset();
+            $('#contact-form #recaptcha-form-group').addClass('has-error');
+            $('#contact-form #recaptcha-failed-alert').removeClass('hide');
+          } else {
+            console.log("submit contact form failed: " + data.reason);
+            $('#send-failed-alert').removeClass('hide');
+          }
         }
       })
-      .fail(function() {
+      .fail(function(data) {
         $('#send-failed-alert').removeClass('hide');
       });
     });

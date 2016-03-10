@@ -15,6 +15,7 @@ linkedin_username: keder
 ## disable comments
 # disqus_shortname: dankeder
 google_analytics_tracking_id: UA-47631149-1
+recaptcha_site_key: 6LevfRoTAAAAAODTEFMvLXg3QJg-9sVWlMZm0XQR
 
 # Build settings
 markdown: kramdown

@@ -177,6 +177,11 @@ layout: page
               <span id="missing-text-alert" class="help-block small hide">* required field</span>
             </div>
 
+            <div class="form-group" id="recaptcha-form-group">
+              <div class="g-recaptcha" data-sitekey="{{ site.recaptcha_site_key }}"></div>
+              <span id="recaptcha-failed-alert" class="help-block small hide">* Anti-spam check failed</span>
+            </div>
+
             <div class="form-group">
               <button type="submit" class="btn btn-primary">Send message</button>
             </div>
