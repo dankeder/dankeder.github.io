@@ -4,13 +4,18 @@ title:      "Automating DB schema updates"
 subtitle:   "How to automate database schema updates."
 date:       2015-03-02 18:00:00 +0200
 author:     "Dan Keder"
+excerpt_separator: <!--more-->
 ---
 
 Some time ago I've been searching for a tool for automating PostgreSQL database
 updates. You know the drill - creating new tables, adding columns, renaming
 stuff, etc. Doing these things by hand is error prone and cumbersome, and
 sometimes not even possible, especially if you have more than one database or if
-you need to share your changes with more developers. Add to that the distributed
+you need to share your changes with more developers.
+
+<!--more-->
+
+Add to that the distributed
 nature of development these days and you can have a lot of fun trying to figure
 out what a column is supposed to be called like after three different developers
 renamed it at the same time.

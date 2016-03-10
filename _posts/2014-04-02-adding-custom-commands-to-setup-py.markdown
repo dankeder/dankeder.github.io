@@ -4,6 +4,7 @@ title:      "Adding custom commands to setup.py"
 subtitle:   ""
 date:       2014-04-02 14:20:13 +0200
 author:     "Dan Keder"
+excerpt_separator: <!--more-->
 ---
 
 I'm often using [Setuptools](http://pythonhosted.org/setuptools/) to package
@@ -14,6 +15,8 @@ to `setup.py` so I can run it like this:
 
 The official documentation of Setuptools isn't very specific on how to do it so
 here is what I came up with after a little research.
+
+<!--more-->
 
 Long story short: We need to subclass the class `setuptools.Command` and
 register it with Setuptools.
