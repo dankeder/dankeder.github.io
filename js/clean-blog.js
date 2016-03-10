@@ -17,35 +17,36 @@ $(function() {
     $('#contact-form #name').change(function(e) {
       if ($(this).val() == '') {
         $('#contact-form #name-form-group').addClass('has-error');
-        $('#contact-form #missing-name-alert').removeClass('hide');
+        $('#contact-form #name-required-alert').removeClass('hide');
       } else {
         $('#contact-form #name-form-group').removeClass('has-error');
-        $('#contact-form #missing-name-alert').addClass('hide');
+        $('#contact-form #name-required-alert').addClass('hide');
       }
     });
 
     $('#contact-form #email').change(function(e) {
       if ($(this).val() == '') {
         $('#contact-form #email-form-group').addClass('has-error');
-        $('#contact-form #missing-email-alert').removeClass('hide');
+        $('#contact-form #email-required-alert').removeClass('hide');
       } else {
         $('#contact-form #email-form-group').removeClass('has-error');
-        $('#contact-form #missing-email-alert').addClass('hide');
+        $('#contact-form #email-required-alert').addClass('hide');
       }
     });
 
     $('#contact-form #text').change(function(e) {
       if ($(this).val() == '') {
         $('#contact-form #text-form-group').addClass('has-error');
-        $('#contact-form #missing-text-alert').removeClass('hide');
+        $('#contact-form #text-required-alert').removeClass('hide');
       } else {
         $('#contact-form #text-form-group').removeClass('has-error');
-        $('#contact-form #missing-text-alert').addClass('hide');
+        $('#contact-form #text-required-alert').addClass('hide');
       }
     });
 
     $('#contact-form').submit(function(e) {
       e.preventDefault();
+
       var data = {
         name: $('#contact-form #name').val(),
         email: $('#contact-form #email').val(),
@@ -53,8 +54,39 @@ $(function() {
         recaptcha: grecaptcha.getResponse(),
       };
 
-      // form validation
-      if ((data.name == '') || (data.email == '') || (data.text == '')) {
+      // crappy form validation
+      var valid = true;
+      if (data.name == '') {
+        if ($('#contact-form #name').val() == '') {
+          $('#contact-form #name-form-group').addClass('has-error');
+          $('#contact-form #name-required-alert').removeClass('hide');
+        } else {
+          $('#contact-form #name-form-group').removeClass('has-error');
+          $('#contact-form #name-required-alert').addClass('hide');
+        }
+        valid = false;
+      }
+      if (data.email == '') {
+        if ($('#contact-form #email').val() == '') {
+          $('#contact-form #email-form-group').addClass('has-error');
+          $('#contact-form #email-required-alert').removeClass('hide');
+        } else {
+          $('#contact-form #email-form-group').removeClass('has-error');
+          $('#contact-form #email-required-alert').addClass('hide');
+        }
+        valid = false;
+      }
+      if (data.text == '') {
+        if ($('#contact-form #text').val() == '') {
+          $('#contact-form #text-form-group').addClass('has-error');
+          $('#contact-form #text-required-alert').removeClass('hide');
+        } else {
+          $('#contact-form #text-form-group').removeClass('has-error');
+          $('#contact-form #text-required-alert').addClass('hide');
+        }
+        valid = false;
+      }
+      if (!valid) {
         return;
       }
 
