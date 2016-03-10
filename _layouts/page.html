@@ -1,30 +1,16 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- Page Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="site-heading">
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
+{% include head.html %}
 
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+<body>
 
-      {% if page.title %}<h1>{{ page.title }}</h1>{% endif %}
-      {% if page.description %}<span class="subheading">{{ page.description }}</span>{% endif %}
+  {% include nav.html %}
 
-			{{ content }}
-		</div>
-	</div>
-</div>
+  {{ content }}
 
-<hr>
+  {% include footer.html %}
+
+</body>
+
+</html>
