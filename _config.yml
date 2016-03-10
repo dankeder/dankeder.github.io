@@ -9,9 +9,11 @@ baseurl: ""
 url: "http://keder.me"
 twitter_username: xdaneus
 github_username:  dankeder
-googleplus_username: DanKeder
+## disable google+
+# googleplus_username: DanKeder
 linkedin_username: keder
-disqus_shortname: dankeder
+## disable comments
+# disqus_shortname: dankeder
 google_analytics_tracking_id: UA-47631149-1
 
 # Build settings
