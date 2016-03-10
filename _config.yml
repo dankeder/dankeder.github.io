@@ -18,7 +18,7 @@ google_analytics_tracking_id: UA-47631149-1
 
 # Build settings
 markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 permalink: /posts/:title/
 paginate: 5
 paginate_path: "/posts/:num/"
