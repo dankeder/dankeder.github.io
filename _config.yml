@@ -1,10 +1,11 @@
 # Site settings
+author: Dan Keder
 title: Dan Keder
 header-img: img/bg1.png
 email: dan.keder@gmail.com
 # python: print ''.join(map(lambda x: '&#%s;'%ord(x), 'me@example.com'))
 antispam_email: "&#100;&#97;&#110;&#46;&#107;&#101;&#100;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
-description: "Dan Keder's blog"
+description: "Dan Keder - freelance software engineer &amp; system administrator"
 baseurl: ""
 url: "https://dankeder.com"
 twitter_username: xdaneus
