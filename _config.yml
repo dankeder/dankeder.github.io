@@ -30,3 +30,4 @@ exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 gems:
   - jekyll-sitemap
   - jekyll-paginate
+  - jekyll-feed
