@@ -5,6 +5,7 @@ subtitle:   "How to automate database schema updates."
 date:       2015-03-02 18:00:00 +0200
 author:     "Dan Keder"
 excerpt_separator: <!--more-->
+redirect_from: "/2015/02/08/database-migrations-sqitch/"
 ---
 
 Some time ago I've been searching for a tool for automating PostgreSQL database

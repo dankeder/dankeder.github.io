@@ -5,6 +5,7 @@ subtitle:   ""
 date:       2014-04-02 14:20:13 +0200
 author:     "Dan Keder"
 excerpt_separator: <!--more-->
+redirect_from: "2014/04/02/adding-custom-commands-to-setup-py/"
 ---
 
 I'm often using [Setuptools](http://pythonhosted.org/setuptools/) to package

@@ -4,6 +4,7 @@ title:      "Moving to GitHub Pages"
 subtitle:   ""
 date:       2015-01-24 14:20:00 +0200
 author:     "Dan Keder"
+redirect_from: "/2015/01/24/migration-to-github-pages/"
 ---
 
 I decided to move this little blog of mine to [GitHub

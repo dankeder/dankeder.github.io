@@ -4,6 +4,7 @@ title:      "Test changes before merging"
 subtitle:   ""
 date:       2014-03-11 08:32:30 +0200
 author:     "Dan Keder"
+redirect_from: "2014/03/11/test-before-merging/"
 ---
 
 That seems obvious, doesn't it? Why would anyone do it the other way around? I

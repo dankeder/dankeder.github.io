@@ -5,6 +5,7 @@ subtitle:   ""
 date:       2015-08-21 13:48:00 +0200
 author:     "Dan Keder"
 excerpt_separator: <!--more-->
+redirect_from: "/2015/08/21/build-tools-not-solutions/"
 ---
 
 A couple of months ago I was on a conference in Berlin (IIRC it was [Erlang

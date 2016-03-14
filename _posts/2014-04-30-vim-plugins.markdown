@@ -5,6 +5,7 @@ subtitle:   "Here are some of the best Vim plugins I found over the years which 
 date:       2014-04-30 16:29:38 +0200
 author:     "Dan Keder"
 excerpt_separator: <!--more-->
+redirect_from: "2014/04/30/vim-plugins/"
 ---
 
 <!--more-->

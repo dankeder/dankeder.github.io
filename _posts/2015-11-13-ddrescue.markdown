@@ -4,6 +4,7 @@ title:      "Recovering data with ddrescue"
 subtitle:   ""
 date:       2015-11-13 17:40:00 +0100
 author:     "Dan Keder"
+redirect_from: "/2015/11/13/ddrescue/"
 ---
 
 I had a hard-drive failure some time ago. The drive was in a really bad shape,
