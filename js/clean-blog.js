@@ -121,6 +121,8 @@ $(function() {
   });
 })();
 
+/* I don't want to juggle with the header bar
+ *
 // Navigation Scripts to Show Header on Scroll-Up
 jQuery(document).ready(function($) {
     var MQL = 1170;
@@ -150,3 +152,4 @@ jQuery(document).ready(function($) {
             });
     }
 });
+*/
