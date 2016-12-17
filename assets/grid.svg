@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   inkscape:export-filename="/home/dan/data/projects/dankeder.com/dankeder.github.io/img/grid.png"
+   inkscape:export-xdpi="134.33"
+   inkscape:export-ydpi="134.33"
+   sodipodi:docname="grid.svg">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="163.4287"
+     inkscape:cy="615.97617"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="709"
+     inkscape:window-x="0"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <sodipodi:guide
+       position="249.10715,711.60716"
+       orientation="1,0"
+       id="guide104138" />
+    <sodipodi:guide
+       position="222.73864,731.72927"
+       orientation="0,1"
+       id="guide104140" />
+    <sodipodi:guide
+       position="49.107143,721.9643"
+       orientation="1,0"
+       id="guide104142" />
+    <sodipodi:guide
+       position="245.1514,500.59373"
+       orientation="0,1"
+       id="guide104146" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath104221">
+      <rect
+         style="opacity:1;fill:#ada527;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         id="rect104223"
+         width="199.79529"
+         height="230.86671"
+         x="49.22258"
+         y="320.93362" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <g
+       id="g104150"
+       clip-path="url(#clipPath104221)"
+       inkscape:export-filename="/home/dan/data/projects/dankeder.com/dankeder.github.io/img/grid.png"
+       inkscape:export-xdpi="134.33"
+       inkscape:export-ydpi="134.33">
+      <g
+         inkscape:export-filename="/home/dan/data/projects/dankeder.com/dankeder.github.io/img/grid.png"
+         inkscape:export-ydpi="161.21306"
+         inkscape:export-xdpi="161.21306"
+         transform="translate(49.14773,320.858537044)"
+         inkscape:label="Grid_Polar:X1:Y1"
+         id="g103940">
+        <g
+           inkscape:label="MajorXGridlines"
+           id="g103942">
+          <path
+             d="M 100.0,0 L 100.0,230.940215352"
+             style="stroke:#000000;stroke-width:1.5;fill:none"
+             inkscape:label="MajorXDiv6"
+             id="path103944" />
+        </g>
+        <g
+           inkscape:label="MajorYGridlines"
+           id="g103946">
+          <path
+             d="M 183.333333333,230.940215352 L 0,125.092616649"
+             style="stroke:#000000;stroke-width:1.5;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path103948" />
+          <path
+             d="M 200.0,125.092616649 L 0,9.62250897299"
+             style="stroke:#000000;stroke-width:1.5;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path103950" />
+          <path
+             d="M 200.0,9.62250897299 L 183.333333333,0"
+             style="stroke:#000000;stroke-width:1.5;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path103952" />
+        </g>
+        <g
+           inkscape:label="MajorZGridlines"
+           id="g103954">
+          <path
+             d="M 16.6666666667,230.940215352 L 200.0,125.092616649"
+             style="stroke:#000000;stroke-width:1.5;fill:none"
+             inkscape:label="MajorZDiv6"
+             id="path103956" />
+          <path
+             d="M 0.0,125.092616649 L 200.0,9.62250897299"
+             style="stroke:#000000;stroke-width:1.5;fill:none"
+             inkscape:label="MajorZDiv12"
+             id="path103958" />
+          <path
+             d="M 0.0,9.62250897299 L 16.6666666667,0"
+             style="stroke:#000000;stroke-width:1.5;fill:none"
+             inkscape:label="MajorZDiv18"
+             id="path103960" />
+        </g>
+        <g
+           inkscape:label="MinorXGridlines"
+           id="g103962">
+          <path
+             d="M 50.0,0 L 50.0,230.940215352"
+             style="stroke:#000000;stroke-width:1.0;fill:none"
+             inkscape:label="MajorXDiv3"
+             id="path103964" />
+          <path
+             d="M 150.0,0 L 150.0,230.940215352"
+             style="stroke:#000000;stroke-width:1.0;fill:none"
+             inkscape:label="MajorXDiv9"
+             id="path103966" />
+        </g>
+        <g
+           inkscape:label="SubMinorXGridlines"
+           id="g103968">
+          <path
+             d="M 16.6666666667,0 L 16.6666666667,230.940215352"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorXDiv1"
+             id="path103970" />
+          <path
+             d="M 33.3333333333,0 L 33.3333333333,230.940215352"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorXDiv2"
+             id="path103972" />
+          <path
+             d="M 66.6666666667,0 L 66.6666666667,230.940215352"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorXDiv4"
+             id="path103974" />
+          <path
+             d="M 83.3333333333,0 L 83.3333333333,230.940215352"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorXDiv5"
+             id="path103976" />
+          <path
+             d="M 116.666666667,0 L 116.666666667,230.940215352"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorXDiv7"
+             id="path103978" />
+          <path
+             d="M 133.333333333,0 L 133.333333333,230.940215352"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorXDiv8"
+             id="path103980" />
+          <path
+             d="M 166.666666667,0 L 166.666666667,230.940215352"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorXDiv10"
+             id="path103982" />
+          <path
+             d="M 183.333333333,0 L 183.333333333,230.940215352"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorXDiv11"
+             id="path103984" />
+        </g>
+        <g
+           inkscape:label="MinorYGridlines"
+           id="g103986">
+          <path
+             d="M 83.3333333333,230.940215352 L 0,182.827670487"
+             style="stroke:#000000;stroke-width:1.0;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path103988" />
+          <path
+             d="M 200.0,182.827670487 L 0,67.3575628109"
+             style="stroke:#000000;stroke-width:1.0;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path103990" />
+          <path
+             d="M 200.0,67.3575628109 L 83.3333333333,0"
+             style="stroke:#000000;stroke-width:1.0;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path103992" />
+        </g>
+        <g
+           inkscape:label="SubMinorYGridlines"
+           id="g103994">
+          <path
+             d="M 16.6666666667,230.940215352 L 0,221.317706379"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path103996" />
+          <path
+             d="M 50.0,230.940215352 L 0,202.072688433"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path103998" />
+          <path
+             d="M 116.666666667,230.940215352 L 0,163.582652541"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path104000" />
+          <path
+             d="M 150.0,230.940215352 L 0,144.337634595"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path104002" />
+          <path
+             d="M 200.0,221.317706379 L 0,105.847598703"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path104004" />
+          <path
+             d="M 200.0,202.072688433 L 0,86.6025807569"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path104006" />
+          <path
+             d="M 200.0,163.582652541 L 0,48.1125448649"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path104008" />
+          <path
+             d="M 200.0,144.337634595 L 0,28.867526919"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path104010" />
+          <path
+             d="M 200.0,105.847598703 L 16.6666666667,0"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path104012" />
+          <path
+             d="M 200.0,86.6025807569 L 50.0,0"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path104014" />
+          <path
+             d="M 200.0,48.1125448649 L 116.666666667,0"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path104016" />
+          <path
+             d="M 200.0,28.867526919 L 150.0,0"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorYDiv11"
+             id="path104018" />
+        </g>
+        <g
+           inkscape:label="MinorZGridlines"
+           id="g104020">
+          <path
+             d="M 116.666666667,230.940215352 L 200.0,182.827670487"
+             style="stroke:#000000;stroke-width:1.0;fill:none"
+             inkscape:label="MajorZDiv3"
+             id="path104022" />
+          <path
+             d="M 0.0,182.827670487 L 200.0,67.3575628109"
+             style="stroke:#000000;stroke-width:1.0;fill:none"
+             inkscape:label="MajorZDiv9"
+             id="path104024" />
+          <path
+             d="M 0.0,67.3575628109 L 116.666666667,0"
+             style="stroke:#000000;stroke-width:1.0;fill:none"
+             inkscape:label="MajorZDiv15"
+             id="path104026" />
+        </g>
+        <g
+           inkscape:label="SubMinorZGridlines"
+           id="g104028">
+          <path
+             d="M 183.333333333,230.940215352 L 200.0,221.317706379"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorZDiv1"
+             id="path104030" />
+          <path
+             d="M 150.0,230.940215352 L 200.0,202.072688433"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorZDiv2"
+             id="path104032" />
+          <path
+             d="M 83.3333333333,230.940215352 L 200.0,163.582652541"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorZDiv4"
+             id="path104034" />
+          <path
+             d="M 50.0,230.940215352 L 200.0,144.337634595"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorZDiv5"
+             id="path104036" />
+          <path
+             d="M 0.0,221.317706379 L 200.0,105.847598703"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorZDiv7"
+             id="path104038" />
+          <path
+             d="M 0.0,202.072688433 L 200.0,86.6025807569"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorZDiv8"
+             id="path104040" />
+          <path
+             d="M 0.0,163.582652541 L 200.0,48.1125448649"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorZDiv10"
+             id="path104042" />
+          <path
+             d="M 0.0,144.337634595 L 200.0,28.867526919"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorZDiv11"
+             id="path104044" />
+          <path
+             d="M 0.0,105.847598703 L 183.333333333,0"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorZDiv13"
+             id="path104046" />
+          <path
+             d="M 0.0,86.6025807569 L 150.0,0"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorZDiv14"
+             id="path104048" />
+          <path
+             d="M 0.0,48.1125448649 L 83.3333333333,0"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorZDiv16"
+             id="path104050" />
+          <path
+             d="M 0.0,28.867526919 L 50.0,0"
+             style="stroke:#000000;stroke-width:0.5;fill:none"
+             inkscape:label="MajorZDiv17"
+             id="path104052" />
+        </g>
+        <rect
+           height="230.940215352"
+           style="stroke:#000000;stroke-width:0.0;fill:none"
+           width="200.0"
+           x="0"
+           y="0"
+           inkscape:label="Border"
+           id="rect104054" />
+      </g>
+      <path
+         inkscape:export-ydpi="161.21306"
+         inkscape:export-xdpi="161.21306"
+         inkscape:export-filename="/home/dan/data/projects/dankeder.com/dankeder.github.io/img/grid.png"
+         sodipodi:nodetypes="cc"
+         inkscape:connector-curvature="0"
+         id="path104144"
+         d="m 249.1867,320.71819 0,231.04127"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1.02221227px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>
