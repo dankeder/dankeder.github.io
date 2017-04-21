@@ -1,68 +1,50 @@
 ---
-layout: page
+layout: base
 ---
 
-<!-- Page Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="site-heading">
+<div class="ui vertical segment">
+  <div class="ui padded text container">
+    <div class="ui divided relaxed items">
+      {% for post in paginator.posts %}
+      <div class="item">
+        <div class="content">
+          <a href="{{ post.url | prepend: site.baseurl }}" class="header">
+            {{ post.title }}
+          </a>
+          <div class="meta">
+            <small class="date">{{ post.date | date: "%B %-d, %Y" }}</small>
+          </div>
+          <div class="description">
+            {{ post.excerpt }}
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</header>
-
-
-<!-- Main Content -->
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-      {% for post in paginator.posts %}
-      <div class="post-preview">
-          <a href="{{ post.url | prepend: site.baseurl }}">
-              <h2 class="post-title">{{ post.title }}</h2>
-              {% if false and post.subtitle %}
-              <h3 class="post-subtitle">
-                  {{ post.subtitle }}
-              </h3>
-              {% endif %}
-          </a>
-          <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
-
-          <p>
-          {{ post.excerpt }}
-          </p>
-
-          <p>
-          <a href="{{ post.url | prepend: site.baseurl }}">Read more &hellip;</a>
-          </p>
-      </div>
-      <hr>
-
-
-
-
       {% endfor %}
 
-      <!-- Pager -->
       {% if paginator.total_pages > 1 %}
-      <ul class="pager">
-          {% if paginator.previous_page %}
-          <li class="previous">
-              <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
-          </li>
-          {% endif %}
-          {% if paginator.next_page %}
-          <li class="next">
-              <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
-          </li>
-          {% endif %}
-      </ul>
+      <div class="ui centered grid">
+        <div class="eight wide column">
+          <div class="ui small fluid two item pagination menu">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="item">
+              <i class="angle double left icon"></i> Previous
+            </a>
+            {% else %}
+            <span class="disabled item"><i class="angle double left icon"></i> Previous</span>
+            {% endif %}
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="item">
+              Next <i class="angle double right icon"></i>
+            </a>
+            {% else %}
+            <span class="disabled item">
+              Next <i class="angle double right icon"></i>
+            </span>
+            {% endif %}
+          </div>
+        </div>
+      </div>
       {% endif %}
-
-		</div>
-	</div>
+    </div>
+  </div>
 </div>

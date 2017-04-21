@@ -1,20 +1,16 @@
 # Site settings
 author: Dan Keder
 title: Dan Keder
-header-img: img/bg1.png
 email: dan.keder@gmail.com
 # python: print ''.join(map(lambda x: '&#%s;'%ord(x), 'me@example.com'))
 antispam_email: "&#100;&#97;&#110;&#46;&#107;&#101;&#100;&#101;&#114;&#64;&#103;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;"
+header-img: img/bg1.png
 description: "Dan Keder - freelance software engineer &amp; system administrator"
-baseurl: ""
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dankeder.com"
 twitter_username: xdaneus
 github_username:  dankeder
-## disable google+
-# googleplus_username: DanKeder
 linkedin_username: keder
-## disable comments
-# disqus_shortname: dankeder
 google_analytics_tracking_id: UA-47631149-1
 recaptcha_site_key: 6LevfRoTAAAAAODTEFMvLXg3QJg-9sVWlMZm0XQR
 
@@ -24,7 +20,14 @@ highlighter: rouge
 permalink: /posts/:title/
 paginate: 5
 paginate_path: "/posts/:num/"
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+theme: minima
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - semantic
+  - semantic.json
+  - README.md
+  - assets
 
 # Dependencies
 gems:

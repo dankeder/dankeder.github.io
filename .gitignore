@@ -1,4 +1,6 @@
 _site
-node_modules
-*.swp
-*.swo
+.sass-cache
+.jekyll-metadata
+*.sw[opn]
+.tags
+semantic/node_modules

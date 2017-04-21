@@ -1,74 +1,47 @@
 ---
-layout: page
+layout: base
 ---
 
-<!-- Page Header -->
-<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        <div class="post-heading">
+<article class="ui vertical segment">
+  <div class="ui padded text container">
+    <div class="item">
+      <div class="content">
+        <h1 class="header">{{ page.title }}</h1>
+        <div class="meta">
+          <small>
+            Posted on {{ page.date | date: "%B %-d, %Y" }} by {{ page.author }}
+          </small>
+          <span>
+            <a href="https://twitter.com/share" class="ui mini right floated twitter button" data-via="xdaneus">
+              <i class="ui twitter icon"></i>
+              Tweet
+            </a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            <div class="ui clearing divider"></div>
+          </span>
         </div>
       </div>
     </div>
+    {{ content }}
   </div>
-</header>
 
+  {% if site.disqus_shortname %}
+  <div class="ui vertical segment">
+    <div class="ui text container">
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = '{{ site.disqus_shortname }}'; // required: replace example with your forum shortname
 
-<!-- Post Content -->
-<article>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-
-        <h1 class="post-title">{{ page.title }}</h1>
-
-        <p>
-          <span class="post-meta">Posted on {{ page.date | date: "%B %-d, %Y" }}</span>
-        </p>
-
-        <hr>
-
-        {{ content }}
-
-        {% include twitter_button.html %}
-
-        <hr>
-
-        <ul class="pager">
-          {% if page.previous.url %}
-          <li class="previous">
-            <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.previous.title}}">&larr; Previous Post</a>
-          </li>
-          {% endif %}
-          {% if page.next.url %}
-          <li class="next">
-            <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{page.next.title}}">Next Post &rarr;</a>
-          </li>
-          {% endif %}
-        </ul>
-
-        {% if site.disqus_shortname %}
-        <hr>
-
-        <div id="disqus_thread"></div>
-        <script type="text/javascript">
-          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-          var disqus_shortname = '{{ site.disqus_shortname }}'; // required: replace example with your forum shortname
-
-          /* * * DON'T EDIT BELOW THIS LINE * * */
-          (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-          })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-        {% endif %}
-      </div>
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     </div>
   </div>
+  {% endif %}
 </article>
-
-<hr>

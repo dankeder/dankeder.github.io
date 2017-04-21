@@ -1,47 +1,25 @@
-<!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<div class="ui large top fixed menu">
 
-    <noscript>
-      <div class="alert alert-danger text-center small" style="margin-bottom: 0; padding: 7px 15px">
-        <b>Please enable JavaScript.</b> The site might not work correctly without it.
-      </div>
-    </noscript>
-
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
-            <div class="navbar-text">
-              <a href="https://www.google.cz/maps/place/Brno/@49.2019853,16.4378766,11z/data=!3m1!4b1!4m5!3m4!1s0x4712943ac03f5111:0x400af0f6614b1b0!8m2!3d49.1950602!4d16.6068371?hl=en">
-                <small>
-                  <span class="fa fa-map-marker"></span>
-                  Brno, Czech Republic
-                </small>
-              </a>
-            </div>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="{{ site.baseurl }}/">Home</a>
-                </li>
-                <li>
-                    <a href="{{ site.baseurl }}/posts/">Posts</a>
-                </li>
-                <li>
-                    <a href="{{ site.baseurl }}/#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
+  <!-- TODO: remove or move elsewhere
+  <noscript>
+    <div class="alert alert-danger text-center small" style="margin-bottom: 0; padding: 7px 15px">
+      <b>Please enable JavaScript.</b> The site might not work correctly without it.
     </div>
-    <!-- /.container -->
-</nav>
+  </noscript>
+  -->
+
+  <div class="ui container">
+    <a class="header item" href="{{ site.baseurl }}/">
+      {{ site.title }}
+    </a>
+    <a class="item" href="{{ site.baseurl }}/">Home</a>
+    <a class="item" href="{{ site.baseurl }}/posts/">Posts</a>
+    <a class="item" href="{{ site.baseurl }}/#contact">Contact</a>
+    <a class="right item" href="https://www.google.cz/maps/place/Brno/@49.2019853,16.4378766,11z/data=!3m1!4b1!4m5!3m4!1s0x4712943ac03f5111:0x400af0f6614b1b0!8m2!3d49.1950602!4d16.6068371?hl=en" target="_blank">
+      <small>
+        <i class="map icon"></i>
+        <span>Brno, Czech Republic</span>
+      </small>
+    </a>
+  </div>
+</div>

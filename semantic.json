@@ -1,0 +1,22 @@
+{
+  "base": "",
+  "paths": {
+    "source": {
+      "config": "semantic/src/theme.config",
+      "definitions": "semantic/src/definitions/",
+      "site": "semantic/src/site/",
+      "themes": "semantic/src/themes/"
+    },
+    "output": {
+      "packaged": "static/semantic/",
+      "uncompressed": "static/semantic/components/",
+      "compressed": "static/semantic/components/",
+      "themes": "static/semantic/themes/"
+    },
+    "clean": "static/semantic/"
+  },
+  "permission": false,
+  "autoInstall": true,
+  "rtl": false,
+  "version": "2.2.10"
+}
