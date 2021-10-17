@@ -65,22 +65,23 @@ redirect_from:
     <h1 class="ui header"><i class="code icon"></i>Technologies</h1>
 
     <p>
-      Here are some of the keywords I heard about:
+      Here are some of the technologies I use:
     </p>
 
     <ul>
       <li>Fedora, CentOS, RHEL, Debian, Ubuntu</li>
       <li>systemd, SELinux, firewalld, NetworkManager</li>
-      <li>Containers: Docker, Docker Swarm, Rancher</li>
-      <li>AWS</li>
-      <li>Ansible</li>
+      <li>Kubernetes, Docker, Rancher</li>
+      <li>AWS, GCP</li>
+      <li>Ceph, NFS</li>
+      <li>Ansible, Terraform</li>
       <li>nginx, HAProxy, uWSGI, gunicorn</li>
       <li>Python, Flask</li>
       <li>PostgreSQL, PgBouncer, MySQL</li>
-      <li>Memcached, Redis</li>
+      <li>Redis</li>
       <li>HTTP, REST API</li>
-      <li>Icinga2, InfluxDB, Grafana, Sensu</li>
-      <li>Vim, Git, VirtualBox, shell, SSH</li>
+      <li>TimescaleDB, Grafana, Zabbix</li>
+      <li>Git</li>
     </ul>
   </div>
 </div>
@@ -90,93 +91,7 @@ redirect_from:
     <h1 class="ui header"><i class="mail outline icon"></i>Contact</h1>
 
     <p>
-      You can reach me using the form below or you can send me an email to
-      <a href="mailto:{{site.antispam_email }}">{{ site.antispam_email }}</a>.
+      You can reach me here: <a href="mailto:{{site.antispam_email }}">{{ site.antispam_email }}</a>.
     </p>
-
-    <div class="ui form" id="contact-form">
-      <div class="ui positive message hidden" id="send-successful">
-        Thank you, your message was sent successfully. I will get back to you as soon as possible.
-      </div>
-
-      <div class="ui error message hidden" id="send-failed">
-        Sorry, something went wrong and your message was not sent. Please try again later.
-      </div>
-
-      <div class="ui error message hidden" id="send-failed-recaptcha" >
-        Anti-spam check failed. Are you a robot?
-      </div>
-
-      <div class="field" id="name-field">
-        <label>Your name</label>
-        <input name="name" placeholder="Name"/>
-      </div>
-
-      <div class="field" id="email-field">
-        <label>Your email address</label>
-        <input type="email" name="email" placeholder="Email"/>
-      </div>
-
-      <div class="field">
-        <label>Message text</label>
-        <textarea name="text" rows=7></textarea>
-      </div>
-
-      <div class="field">
-        <div class="g-recaptcha" data-sitekey="{{ site.recaptcha_site_key }}"></div>
-      </div>
-
-      <div class="ui huge primary submit button" id="submit">
-        Send message
-      </div>
-    </div>
-    <script type="text/javascript">
-      (function() {
-        jQuery(document).ready(function($) {
-          $('#contact-form').form({
-            fields: {
-              name: ['empty', 'maxLength[512]'],
-              email: ['empty', 'email', 'maxLength[512]'],
-              text: ['empty', 'maxLength[4096]'],
-            }
-          })
-
-          $('#contact-form').submit(function(e) {
-            e.preventDefault();
-            var $form = $('#contact-form');
-            var data = {
-              name: $form.form('get value', 'name'),
-              email: $form.form('get value', 'email'),
-              text: $form.form('get value', 'text'),
-              recaptcha: grecaptcha.getResponse(),
-            };
-            var posting = $.ajax({
-              type: 'POST',
-              url: "https://develcraft.com/send-mail",
-              contentType: 'application/json; charset=utf-8',
-              data: JSON.stringify(data),
-            });
-            posting
-            .done(function (data) {
-              if (data.success) {
-                $('#send-successful', $form).removeClass('hidden');
-              } else {
-                if (data.reason === 'recaptcha_check_failed') {
-                  grecaptcha.reset();
-                  $('#send-failed-recaptcha', $form).removeClass('hidden');
-                } else {
-                  console.log("submit contact $form failed: " + data.reason);
-                  $('#send-failed').removeClass('hidden');
-                }
-              }
-            })
-            .fail(function(data) {
-              $('#send-failed').removeClass('hidden');
-            });
-          });
-        });
-      })();
-    </script>
-
   </div>
 </div>
