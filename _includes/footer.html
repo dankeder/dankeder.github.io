@@ -16,26 +16,10 @@
         </div>
         {% endif %}
 
-        {% if site.facebook_username %}
-        <div class="one wide column">
-          <a href="https://www.facebook.com/{{ site.facebook_username }}">
-            <i class="ui large circular inverted faded facebook icon"></i>
-          </a>
-        </div>
-        {% endif %}
-
         {% if site.github_username %}
         <div class="one wide column">
           <a href="https://github.com/{{ site.github_username }}">
             <i class="ui large circular inverted faded github icon"></i>
-          </a>
-        </div>
-        {% endif %}
-
-        {% if site.googleplus_username %}
-        <div class="one wide column">
-          <a href="https://plus.google.com/+{{ site.googleplus_username }}">
-            <i class="ui large circular inverted faded google plus icon"></i>
           </a>
         </div>
         {% endif %}
@@ -56,23 +40,3 @@
       </div>
   </div>
 </footer>
-
-<!-- Google Analytics -->
-<!--
-{% if site.google_analytics_tracking_id %}
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', '{{ site.google_analytics_tracking_id }}', 'auto');
-  ga('require', 'linkid');
-  ga('send', 'pageview');
-</script>
--->
-
-<!-- Recaptcha -->
-<script src='https://www.google.com/recaptcha/api.js'></script>
-
-{% endif %}
